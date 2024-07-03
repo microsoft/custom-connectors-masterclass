@@ -1,14 +1,15 @@
-# Project
+# Custom Connectors Masterclass 🧙
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+In the Power Platform there are more than 1200 connectors available out of the box. This is a huge amount and offers you great functionality from the get-go. But what if you need to connect to a data source or a service that is not available in the Power Platform? Or what if you want to customize the functionality or the user interface of an existing connector? This is where custom connectors come in. Custom connectors are the superheroes of the Power Platform, because they allow you to extend its capabilities and create unique and tailored solutions.
 
-As the maintainer of this project, please make a few updates:
+In this workshop, you will learn all about custom connectors, why they are the superheroes of the Power Platform, how you can easily build them and enhance your experience in the Power Platform. As a bonus – you will also learn about the new AI capabilities within custom connectors.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+The workshop will be divided into four sections:
+
+1️⃣ Section 1: Introduction to Custom Connectors
+2️⃣ Section 2: Building a Custom Connector from Scratch
+3️⃣ Section 3: Testing and Troubleshooting a Custom Connector
+4️⃣ Section 4: Top tips and tricks for Custom Connectors
 
 ## Contributing
 
