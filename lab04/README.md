@@ -17,6 +17,6 @@ In this task, you will learn how to import a connector as an OpenAPI v2 file.
 
 ## Task 2: Learn how to enable a connector as an AI plugin
 
-1. [Download](../resources/plugin-validator.exe) the plugin validator tool.
+1. [Download](../resources/plugin-validator.zip) the plugin validator tool and unzip it.
 
 ## Task 3: Test your connector with the local debugging tool
