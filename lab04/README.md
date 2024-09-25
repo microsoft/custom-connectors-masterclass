@@ -100,4 +100,44 @@ Now we are ready to test the connector AI Plugin!
 
 ## Task 3: Test your connector with the local debugging tool
 
-1. [Download](../resources/plugin-validator.zip) the plugin validator tool and unzip it
+1. [Download](../resources/plugin-validator.zip) the plugin validator tool to the same folder where you downloaded the definition of the connector in the last task and unzip it
+
+1. Open Visual Studio Code
+
+1. If you don't see it open already, let's open the Terminal. Select **Terminal** in the menu on the top and select **New Terminal**
+
+1. Navigate to the directory where you have unzipped the plugin validator and the definition of the connector
+
+1. In the following command, replace `{Key}` by the key you got from us through the email and run the adjusted command in the terminal
+
+    ```powershell
+    .\plugin-validator.exe AzureOpenAI {Key} gpt-35-turbo https://nordicsummit.openai.azure.com/ .\Chuck-Norris-IO.swagger.json    
+    ```
+
+    This will start the plugin validator. The plugin validator gives us an idea of how the AI plugin would respond to our prompts.
+
+    ![Plugin validator](./assets/connector-validator-start.png)
+
+1. Ask the following question: 
+
+    ```text
+    Can you get me a Chuck Norris joke?
+    ```
+
+    This should give you the following response:
+
+    ![Validator joke response](./assets/connector-validator-joke.png)
+
+    As you can see, the operationId equals `GetRandomChuckNorrisFact` and that's what we expect when we enter a prompt like that. 
+
+1. Ask the following question to make it a bit more complicated:
+
+    ```text
+    Can you get me a Chuck Norris joke from the dev category?
+    ```
+
+    This should give you the following response:
+
+    ![Validator joke response](./assets/connector-validator-joke-category.png)
+
+    As you can see, the operationId equals `GetRandomChuckNorrisFact` as well, but there is a major difference. At the end of the URL you can see `?category=dev`. The AI Plugin is smart enough to add that to the URL based on the connector definition we used.
