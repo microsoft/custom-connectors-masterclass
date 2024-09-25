@@ -1,16 +1,11 @@
 # Lab 01 - Introduction to Custom Connectors
 
-# Lab 01 - Tenant setup
-
 In this lab, you will go through the following tasks:
 
 * Creating a new browser profile
 * Logging into the account you are going to use during the workshop
 * Creating developer environments
-* Installing the Creator Kit
-* Creating a GitHub account
-* Creating a fork of the [EPPC23-ALM](https://aka.ms/EPPC23-ALM) repository
-* Creating a codespace
+* Installing Visual Studio Code
 * Installing the Power Platform Tools extension
 * Connecting to the Power Platform environment
 
