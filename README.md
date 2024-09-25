@@ -6,10 +6,10 @@ In this workshop, you will learn all about custom connectors, why they are the s
 
 The workshop will be divided into four sections:
 
-[1️⃣ Section 1: Introduction to Custom Connectors](./lab01/README.md)  
-[2️⃣ Section 2: Building a Custom Connector from Scratch](./lab02/README.md)  
-[3️⃣ Section 3: Testing and Troubleshooting a Custom Connector](./lab03/README.md)  
-[4️⃣ Section 4: Top tips and tricks for Custom Connectors](./lab04/README.md)  
+1️⃣ [Section 1: Introduction to Custom Connectors](./lab01/README.md)  
+2️⃣ [Section 2: Building a Custom Connector from Scratch](./lab02/README.md)  
+3️⃣ [Section 3: Testing and Troubleshooting a Custom Connector](./lab03/README.md)  
+4️⃣ [Section 4: Top tips and tricks for Custom Connectors](./lab04/README.md)  
 
 ## Contributing
 
