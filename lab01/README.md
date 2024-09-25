@@ -9,6 +9,7 @@ In this lab, you will go through the following tasks:
 * Installing the Power Platform Tools extension
 * Connecting to the Power Platform environment
 
+
 ## Task 1: Create a new browser profile (Microsoft Edge)
 
 It's always good to have a separate browser profile for your work and for workshops like this. This way you can keep all of your credentials separate and not have to worry about logging out of your personal / work accounts.
@@ -192,6 +193,52 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
     This command will return information about the environment that you are connected to. You should see the **User XX** (where XX is the number of your user) environment listed as well as other unique information about the environment including the User email you're connected as.
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
+
+## Task 7: Import your first connector
+
+In this task, you will import your first connector.
+
+1. Go to the [Power Automate maker portal](https://make.powerautomate.com)
+
+1. Click on the environment on the top right (**Contoso (default)**)
+
+1. Select the **User XX** (where XX is the number of your user) environment which you created in task 3
+
+    ![Environment selection](./assets/select-environment.png)
+
+1. Next, click on **More** and then on **Discover all**
+
+    ![Discover all](./assets/more-discover-all.png)
+
+1. Scroll down a little bit and make sure to select the **Pin** icon at Custom connectors in the data section
+
+    ![Custom Connectors](./assets/pin-custom-connectors.png)
+
+    This will ensure you will pin custom connectors to your left navigation and you can easily find it back.
+
+1. Now select **Custom connectors** in the left navigation. This will open the custom connectors section in the Power Automate maker portal. From here you can see all the custom connectors that live in your environment. Currently, there will not be any, because you just created this environment. 
+
+1. Select the **New custom connector** button and **Import from Github**
+
+    ![Import from Github step 1](./assets/import-from-github.png)
+
+    This will open a dialog that will enable you to import a connector from the Power Platform Connectors repository on Github we showed earlier in the presentation
+
+1. Select **Custom** as a connector type, **dev** as the branch, **HtmlToText** as the connector and, last but not least, select the **Continue** button
+
+    ![Import from Github step 2](./assets/import-from-github2.png)
+
+    This will import the connector from Github and make it available for you to customize it.
+
+1. We are not allowed to have a description shorter than 30 characters, so let's change the **Description** to `Converts HTML to plain text. This is the HTML to Text connector.`
+
+    ![Import Html to Text connector](./assets/import-htmltotext-connector.png)
+
+1. Explore the connector to see what's in there.
+
+1. When done exploring, make sure to select the **Create connector** button on the top right corner
+
+    ![Create connector](./assets/create-htmltotext-connector.png)
 
 ## Next lab
 
