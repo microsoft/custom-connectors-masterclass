@@ -134,9 +134,7 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
 
     ![Screenshot of the terminal with the code and link](assets/terminal-with-code-and-link.png)
 
-    Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**    
-
-    > **Note:** If you are using a Mac, you can **Ctrl + click** on the ```link``` that is provided in the terminal and then enter the ``code`` provided.
+    Once you click on that link, it will open a new browser tab where you will have to paste that code into the browser and then click **Next**.
 
     ![Enter code and click next](assets/enter-code.png)
 
@@ -168,30 +166,30 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
     pac env list
     ```
 
-    This gets a list of all the environments that you have access to. You should see the **Dev** environment listed as one of them. This is the one we want to eventually connect to. 
+    This gets a list of all the environments that you have access to. You should see the **User XX** (where XX is the number of your user) environment listed as one of them. This is the one we want to eventually connect to. 
 
     ![Screenshot of pac org list](assets/org-list.png)
 
-10. Take note of the Environment ID of the **Dev** Environment and copy it. 
+10. Take note of the Environment ID of the **User XX** (where XX is the number of your user)Environment and copy it. 
 
     ![Copy of Dev environment ID](assets/org-list-with-env-id.png)
 
 11. Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```00000000-0000-0000-0000-000000000000``` with the environment id that you copied above
 
     ```bash
-    pac env select --environment 00000000-0000-0000-0000-000000000000
+    pac org select --environment 00000000-0000-0000-0000-000000000000
     ```
 
-    You should then see confirmation that you have successfully selected the **Dev** org for the current auth profile.
+    You should then see confirmation that you have successfully selected the **User XX** (where XX is the number of your user) environment for the current auth profile.
 
     ![Screenshot of pac org select confirmation](assets/org-select.png)
 
-12. To have further confirmation that you have successfully connected to the **Dev** environment, in the terminal type the following command and then press **Enter**:
+12. To have further confirmation that you have successfully connected to the **User XX** (where XX is the number of your user) environment, in the terminal type the following command and then press **Enter**:
 
     ```bash
-    pac env who
+    pac org who
     ```
-    This command will return information about the environment that you are connected to. You should see the **Dev** environment listed as well as other unique information about the environment including the User email you're connected as.
+    This command will return information about the environment that you are connected to. You should see the **User XX** (where XX is the number of your user) environment listed as well as other unique information about the environment including the User email you're connected as.
 
     ![Screenshot of pac org who confirmation information](assets/org-confirmation.png)
 
