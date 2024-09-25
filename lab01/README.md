@@ -40,7 +40,7 @@ It's always good to have a separate browser profile for your work and for worksh
 
 With the credentials that were provided to you, let's log into the account you are going to use during the workshop.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com)
+1. Go to [make.powerautomate.com](https://make.powerautomate.com)
 2. On the sign-in screen, enter the email address that was provided to you and then click **Next**
 
     ![Sign in screen](assets/pa-sign-in-email.png)
@@ -53,24 +53,13 @@ With the credentials that were provided to you, let's log into the account you a
 
     You should now be logged in and on the Power Apps Home Page.
 
-    ![Power apps home page](assets/power-apps-home-page.png)
+    ![Power apps home page](assets/power-automate-home-page.png)
 
-## Task 3: Create developer environments
+## Task 3: Create developer environment
 
 Developer environments are very helpful when you want to try out features, they are meant to be short living environments.
 
-For this workshop, we are going to create three different developer environments:
-
-* ```Dev```: The environment where we are going to import our solution later on.
-* ```Test```: The environment where we are going to deploy our solution to in lab four.
-* ```Prod```: The environment where we are going to deploy our solution to in lab four.
-
-To create developer environments, you can create them in two ways:
-
-1. Via the Power Platform Admin Center
-1. Via the Power Platform CLI
-
-In this workshop, we will create the environments through the Power Platform Admin Center.
+For this workshop, we are going to create a developer environment through the Power Platform Admin Center.
 
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
 2. Exit the Welcome / Tour pop up. You can do this by clicking on the **X** in the top right corner of the pop up screen
@@ -82,40 +71,20 @@ In this workshop, we will create the environments through the Power Platform Adm
 
     ![Environment + New for adding environments](assets/new-environment-button.png)
 
-5. When the right-hand side dialog pops up - enter the following information:
+5. When the right-hand side dialog pops up - enter the following information (replace XX by the number of your user):
 
     | Field | Value |
     | --- | --- |
-    | Name | Dev |
+    | Name | User XX |
     | Region | Europe - Default |
     | Type | Developer |
-    | Purpose | Developer environment for EPPC23 |
+    | Purpose | Developer environment for Nordic Summit 2024 |
 
     ![Create new Developer Environment](assets/create-dev-env.png)
 
 6. Click **Next**
 7. The next section is asking you to add Dataverse. Finally Click on **Save**
-8. Now do the same for the Test and Prod environments with the following information:
-
-   ```Test Environment:```
-
-    | Field | Value |
-    | --- | --- |
-    | Name | Test |
-    | Region | Europe - Default |
-    | Type | Developer |
-    | Purpose | Developer environment for EPPC23 |
-
-    ```Prod Environment:```
-        
-    | Field | Value |
-    | --- | --- |
-    | Name | Prod |
-    | Region | Europe - Default |
-    | Type | Developer |
-    | Purpose | Developer environment for EPPC23 |
-
-9. Once you have created all three environments, you should see them in the list of environments. Click the **Refresh** button on the top navigation if you don't see them yet.
+9. Once you have created the environment, you should see it in the list of environments. Click the **Refresh** button on the top navigation if you don't see it yet.
 
     ![List of developer environments](assets/list-of-environments.png)
 
