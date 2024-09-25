@@ -240,6 +240,24 @@ In this task, you will import your first connector.
 
     ![Create connector](./assets/create-htmltotext-connector.png)
 
+1. Next, we want to test out the connector. For testing the connector, we have multiple options. The technical test is in the test tab. We will talk about the other options in a later section of the workshop. Click on **6. Test** to go to the testing pane.
+
+    Here we can see a test operation section and the actual operations. But there is a **Test operation** button that is greyed out. So we can't test our operation. Why is that? It's because we don't have a connection yet. Every connector needs a connection, even when you have a connector without authentication.
+
+1. Select **New connection** to add a new connection for this connector
+
+    ![New Connection](./assets/test-pane.png)
+
+    This will enable the **Test operation** button. We can now try that out for the Html that is prefilled in the html input for the operation.
+
+1. Select **Test operation** to test out the operation
+
+    ![Test operation](./assets/test-pane-test-operation.png)
+
+1. After the test is done, you are able to scroll down and see the response of the request
+
+    ![Response operation](./assets/test-pane-test-operation-response.png)
+
 ## Next lab
 
 This is the end of lab 01, select the link below to move to the next lab.
