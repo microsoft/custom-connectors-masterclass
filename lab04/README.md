@@ -76,6 +76,8 @@ In this task, you will learn how to enable the connector as an AI plugin.
 
 1. Add the following URL in the **Legal term URL** field: `https://api.chucknorris.io/privacy`
 
+    ![Plugin Manifest](./assets/connector-plugin-manifest.png)
+
     In the next steps, you can select which plugin actions (or operations) you want to enable as part of the AI Plugin.
 
 1. Scroll down to the bottom of the page and select the **GetRandomChuck...** plugin action
