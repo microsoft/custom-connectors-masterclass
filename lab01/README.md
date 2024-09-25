@@ -122,11 +122,7 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
 
     ![Screenshot of no auth profiles found](assets/no-auth-profiles-found.png)
 
-2. If you don't see it open already, let's open the Terminal. Click on the Burger menu icon in the top left corner and then hover over **Terminal** and then click **New Terminal**
-
-    ![Screenshot of new terminal menu](assets/new-terminal.png)
-
-    A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
+2. If you don't see it open already, let's open the Terminal. Select **Terminal** in the menu on the top and select **New Terminal**
 
 3. Type the following command in the terminal and then press **Enter**:
 
