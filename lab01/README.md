@@ -9,7 +9,6 @@ In this lab, you will go through the following tasks:
 * Installing the Power Platform Tools extension
 * Connecting to the Power Platform environment
 
-
 ## Task 1: Create a new browser profile (Microsoft Edge)
 
 It's always good to have a separate browser profile for your work and for workshops like this. This way you can keep all of your credentials separate and not have to worry about logging out of your personal / work accounts.

@@ -8,7 +8,7 @@ Tasks:
 1. Learn how to enable a connector as an AI plugin
 1. Test your connector with the local debugging tool
 
-## Task 1: Import a connector as an OpenAPI v2 (Swagger) file
+## Task 1: Import a connector with the Power Platform CLI
 
 In this task, you will learn how to import a connector as an OpenAPI v2 file.
 
