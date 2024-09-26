@@ -1,4 +1,4 @@
-# Lab 04 - Top tips and tricks for Custom Connectors
+# Lab 04 - Top tips and tricks for Custom Connectors 🧙‍♂️
 
 In this lab, you will go through the following tasks:
 
