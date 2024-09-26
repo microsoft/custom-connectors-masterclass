@@ -1,4 +1,4 @@
-# Lab 01 - Introduction to Custom Connectors
+# Lab 01 - Introduction to Custom Connectors 👋
 
 In this lab, you will go through the following tasks:
 
