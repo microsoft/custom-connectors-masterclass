@@ -4,9 +4,13 @@ In this lab, you will learn how to enable the connector as an AI plugin.
 
 Tasks:
 
-1. Import a connector as a OpenAPI v2 (swagger) file
-1. Learn how to enable a connector as an AI plugin
-1. Test your connector with the local debugging tool
+* Import a connector as a OpenAPI v2 (swagger) file
+* Learn how to enable a connector as an AI plugin
+* Test your connector with the local debugging tool
+* Make the connector more dynamic by using dynamic schema
+* Learn about connection parameters
+* Tie it all together with policies
+
 
 ## Task 1: Import a connector via the Power Platform Command-Line Interface (CLI)
 
