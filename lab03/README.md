@@ -2,5 +2,6 @@
 
 In this lab, you will go through the following tasks:
 
+* Add dynamic operation
 * Using the test pane in the custom connector UI
 * Testing a custom connector in different products (Power Apps vs Power Automate vs Copilot Studio)

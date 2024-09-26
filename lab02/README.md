@@ -6,7 +6,6 @@ In this lab, you will go through the following tasks:
 * Create a connector in the solution
 * Setup authentication
 * Add operation with Parameters
-* Add dynamic operation
 
 ## Task 1: Create a solution
 Best Practice for everything in the Power Platform: Work INSIDE solutions. They are greating for organizing your customizations and some features only work here plus they over ALM capabilities.
@@ -127,3 +126,89 @@ If all is set up correct and the connection has the right API Key you will see t
 !["Test Result"](./assets/lab02_02_testresult.png)
 
 First call made by your Custom Connector to the Nordic Summit event API!
+
+We will do one more step though, as you might noticed we skip one step in the definition part, the definition of the **Result** of our operation. Since we now have the result JSON let's add it!
+
+### Result of operation
+Copy the body from your test execution of the operation.
+
+Afterwards we navigate back to **Definition** of the wizard. Here navigate down to the **Response** area and click on **Add Default Response**
+
+!["Add Default Response"](./assets/lab02_02_adddefaultresult.png)
+
+This will open again a dialog where you can define the expected result by copying a demo result. Good that we have one now! We only care about the body of this result for this API so copy the response into the **Body** field. The Dialog will now parse the JSON Object and store its schema (similar to the **Parse JSON** action in Power Automate!)
+
+!["Import Response from Sample"](./assets/lab02_02_responsefromsample.png)
+
+To see the result click on the **Default Response** in the main screen.
+
+!["Default Response"](./assets/lab02_02_defaultresponse.png)
+
+In the detail screen we now see that the Custom Connector knows about all the fields which are returned from the action.
+
+!["Default Response Parsed"](./assets/lab02_02_defaultresponseparsed.png)
+
+This is very important and **strongly** recommended to set up for all your actions. If you don't this, when a users calls this action in any UI (Power Automate, Power Apps, etc.) they will only get a JSON object and have to do all parsing themselves. This way the structure is already stored in the Custom Connector and can be directly used. This will be important in the following steps. 
+
+Also remember to **Update Connector** to publish your changes!
+
+!["Update Connector"](./assets/lab02_02_updateconnector.png)
+
+
+## Task 5: Create an operation with parameter
+Let's get into the more interesting stuff, let's make more dynamic operations. You saw that the GET/Events action only returned one event because the environment has this global filter, so let's check out the connected records. For this we will add **Tracks** and **Sessions** with the goal of getting only session of a certain track.
+
+For that we will need the Tracks first so let's start with them!
+
+### GET/Tracks
+Follow the same steps as we did in the operation, starting on the **Definition** screen and click on **New Action**
+
+!["New Action](./assets/lab02_05_newaction.png)
+
+The action is again a GET call to the following URL **https://apim-dhino-fetch-test.azure-api.net/001/export/query/FEC542ED-32AA-4C6D-94E5-6B3841C96B59/910D07E6-F700-404E-8B5A-7263C9DCC58A/TRACKS**
+
+After following the same steps as we did for the GET/EVENTS, you should see a test result like this:
+
+!["Tracks Results"](./assets/lab02_05_tracksresult.png)
+
+Like we did before copy these and add them as the **Default Response** in the definition screen for the Tracks action. If you click on the Default Action afterwards the properties should be parsed like this:
+
+!["Track Results Parsed"](./assets/lab02_05_tracksdefaultresponse.png)
+
+Tip: Make sure to select the correct action on the left hand side before Import the Default Response, or you might risking overwriting the response of the first action.
+
+### GET/Session By Track    
+Next step is calling the action which returns us sessions filtered by track. The Nordic Summit Event API offers the following GET endpoint, here as an example for the track **Isklar**:
+
+**https://apim-dhino-fetch-test.azure-api.net/001/export/query/FEC542ED-32AA-4C6D-94E5-6B3841C96B59/910D07E6-F700-404E-8B5A-7263C9DCC58A/SESSIONSBYTRACK?filter=6c7a850b-517c-ef11-ac20-000d3a2a0e54** 
+
+This is the endpoint for track **Farris**:
+
+**https://apim-dhino-fetch-test.azure-api.net/001/export/query/FEC542ED-32AA-4C6D-94E5-6B3841C96B59/910D07E6-F700-404E-8B5A-7263C9DCC58A/SESSIONSBYTRACK?filter=66d159f9-507c-ef11-ac20-000d3a2a0e54**
+
+The dynamic part of this request is the part after the "?filter=" followed by the **Id** of a track.
+
+So our first step is adding an action which takes one parameter. For that we go to **Definition** and add another action, give it an id, and use the **Import From Sample** function.
+
+!["Add Action With Parameter"](./assets/lab02_05_addparameteraction.png)
+
+Copy the URL from above, but this we modify the URL and mark which part should be a parameter. This is done by replacing the text with "{PARAMETERNAME}", so if we want to add a parameter named "trackid" we use the following URL:
+
+**https://apim-dhino-fetch-test.azure-api.net/001/export/query/FEC542ED-32AA-4C6D-94E5-6B3841C96B59/910D07E6-F700-404E-8B5A-7263C9DCC58A/SESSIONSBYTRACK?filter={trackid}**
+
+!["Dynamic Parameter"](./assets/lab02_05_dynamicparamter.png)
+
+After clicking on **Import** you directly see that our request now has a parameter:
+
+!["Parameter displayed"](./assets/lab02_05_parameteradded.png)
+
+If you click on the parameter and select **Edit** you can check it's properties. We have a lot of options here, for now let's just set it to **Required = Yes** because without a value the API will error out.
+
+!["Parameter Config"](./assets/lab02_05_parameterconfig.png)
+
+After this let's test our new function! **Update Connector** and move to the **Test** screen and select the new action. You see that we now have a parameter field and can add an Id for a track. Test the Tracks action first to get the ids and then test it with the new action.
+
+!["Test Parameter"](./assets/lab02_05_testparameter.png)
+
+This works pretty well! But obviously this not an ideal user experience, you need to know very cryptic GUIDs and there is no support on how to enter them. Let's improve that in the next lab!
+
