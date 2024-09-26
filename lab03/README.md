@@ -1,4 +1,4 @@
-# Lab 03 - Testing and Troubleshooting a Custom Connector
+# Lab 03 - Testing and Troubleshooting a Custom Connector 🚨
 
 In this lab, you will go through the following tasks:
 
