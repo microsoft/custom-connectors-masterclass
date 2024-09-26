@@ -1,4 +1,4 @@
-# Lab 02 - Building a Custom Connector from Scratch
+# Lab 02 - Building a Custom Connector from Scratch 💪
 
 In this lab, you will go through the following tasks:
 
