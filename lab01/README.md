@@ -8,6 +8,7 @@ In this lab, you will go through the following tasks:
 * Installing Visual Studio Code
 * Installing the Power Platform Tools extension
 * Connecting to the Power Platform environment
+* Import your first connector
 
 ## Task 1: Create a new browser profile (Microsoft Edge)
 
