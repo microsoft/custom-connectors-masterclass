@@ -1,8 +1,6 @@
 # Lab 04 - Top tips and tricks for Custom Connectors
 
-In this lab, you will learn how to enable the connector as an AI plugin.
-
-Tasks:
+In this lab, you will go through the following tasks:
 
 * Import a connector as a OpenAPI v2 (swagger) file
 * Learn how to enable a connector as an AI plugin
@@ -10,7 +8,6 @@ Tasks:
 * Make the connector more dynamic by using dynamic schema
 * Learn about connection parameters
 * Tie it all together with policies
-
 
 ## Task 1: Import a connector via the Power Platform Command-Line Interface (CLI)
 
@@ -145,3 +142,9 @@ Now we are ready to test the connector AI Plugin!
     ![Validator joke response](./assets/connector-validator-joke-category.png)
 
     As you can see, the operationId equals `GetRandomChuckNorrisFact` as well, but there is a major difference. At the end of the URL you can see `?category=dev`. The AI Plugin is smart enough to add that to the URL based on the connector definition we used.
+
+## Task 4: Make the connector more dynamic by using dynamic schema
+
+## Task 5: Learn about connection parameters
+
+## Task 6: Tie it all together with policies
