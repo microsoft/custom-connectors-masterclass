@@ -142,7 +142,4 @@ Now we are ready to test the connector AI Plugin!
     ![Validator joke response](./assets/connector-validator-joke-category.png)
 
     As you can see, the operationId equals `GetRandomChuckNorrisFact` as well, but there is a major difference. At the end of the URL you can see `?category=dev`. The AI Plugin is smart enough to add that to the URL based on the connector definition we used.
-
-## Task 4: Learn about connection parameters
-
-## Task 5: Tie it all together with policies
+   
