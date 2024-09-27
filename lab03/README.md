@@ -134,6 +134,10 @@ Visibility in Power Automate will be displayed like this
 
 So by taking care of these properties, you make your connectors a lot easier to use and more professionally looking. But at the same time, you also prepare them for AI 🙂
 
+## Next lab
 
+This is the end of lab 03, select the link below to move to the next lab.
+
+[⏭️ Move to lab 04](../lab04/README.md)
 
 
