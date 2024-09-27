@@ -143,3 +143,8 @@ Now we are ready to test the connector AI Plugin!
 
     As you can see, the operationId equals `GetRandomChuckNorrisFact` as well, but there is a major difference. At the end of the URL you can see `?category=dev`. The AI Plugin is smart enough to add that to the URL based on the connector definition we used.
    
+## End of the lab
+
+This is the end of the labs, select the link below to move back to the main respository.
+
+[⏭️ Move to the main repository](../README.md)
