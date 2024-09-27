@@ -212,3 +212,8 @@ After this let's test our new function! **Update Connector** and move to the **T
 
 This works pretty well! But obviously this not an ideal user experience, you need to know very cryptic GUIDs and there is no support on how to enter them. Let's improve that in the next lab!
 
+## Next lab
+
+This is the end of lab 02, select the link below to move to the next lab.
+
+[⏭️ Move to lab 03](../lab03/README.md)
