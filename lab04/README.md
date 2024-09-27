@@ -5,9 +5,6 @@ In this lab, you will go through the following tasks:
 * Import a connector as a OpenAPI v2 (swagger) file
 * Learn how to enable a connector as an AI plugin
 * Test your connector with the local debugging tool
-* Make the connector more dynamic by using dynamic schema
-* Learn about connection parameters
-* Tie it all together with policies
 
 ## Task 1: Import a connector via the Power Platform Command-Line Interface (CLI)
 
