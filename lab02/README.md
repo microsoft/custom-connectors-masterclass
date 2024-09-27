@@ -8,13 +8,13 @@ In this lab, you will go through the following tasks:
 * Add operation with Parameters
 
 ## Task 1: Create a solution
-Best Practice for everything in the Power Platform: Work INSIDE solutions. They are greating for organizing your customizations and some features only work here plus they over ALM capabilities.
+Best Practice for everything in the Power Platform: Work INSIDE solutions. They are great for organizing your customizations and some features only work here plus they over ALM capabilities.
 
 Because of that our first step withing **make.powerautomate.com** is to navigate to **Solutions** on the left hand side and click on **New Solution**
 
 !["Create new solution"](./assets/lab02_conblank_01_createsolution.png)
 
-In the dialog which open give your solution a meaningful name and select either create an own publisher by clicking **New** or use the **Default Publisher** named after your enivronment.
+In the dialog which open give your solution a meaningful name and select either create an own publisher by clicking **New** or use the **Default Publisher** named after your environment.
 
 !["Create Solution Dialog"](./assets/lab02_conblank_02_solutionwizard.png)
 
@@ -30,20 +30,20 @@ Inside your solution click on **New** and in the menu on **Automation** and then
 !["Create new Connector"](./assets/lab02_02_createnew.png)
 
 ### General Definition
-In a new tab the Custom Connector edit wizard will be openend in the first step.
+In a new tab the Custom Connector edit wizard will be opened in the first step.
 
 !["Create Connector Wizard - Naming](./assets/lab02_02_wizardname.png)
 
-First step is given your Custom Connector a meaningful name, make sure to use a name your users will understand, this will show up in all UIs. Bonuspoints if you also add an icon below under **General Information**
+First step is given your Custom Connector a meaningful name, make sure to use a name your users will understand, this will show up in all UIs. Bonus points if you also add an icon below under **General Information**
 
-Next you need to select **HTTPS** and fill in the **Host** and **Base URL**. The Nordic Summit event api can be reached under the following url:
+Next you need to select **HTTPS** and fill in the **Host** and **Base URL**. The Nordic Summit event API can be reached under the following url:
 
 **https://apim-dhino-fetch-test.azure-api.net/001**
 
 !["Adding Host and Base URL"](./assets/lab02_02_hosturl.png)
 
 ## Task 3: Define Security / Authentication
-Click on **Security** on the bottom or in the wizard status on top to move on to the next step. Authentication describes how the Custom Connector will authenticate with the API and the options to chose from depends on the used API.
+Click on **Security** on the bottom or in the wizard status on top to move on to the next step. Authentication describes how the Custom Connector will authenticate with the API and the options to choose from depends on the used API.
 
 For the Nordic Summit Event API the authentication is done via an **API Key**, so select this option 
 
@@ -80,7 +80,7 @@ Creating an action consists of three steps:
 !["Create Operation"](./assets/lab02_02_createoperation.png)
 
 ### Naming / Description
-As a minimun you need to enter a unique id for this action. Choose a name which is easily recognizable and not a typical "id" because later on other actions use this id to refer to it.
+As a minimum you need to enter a unique id for this action. Choose a name which is easily recognizable and not a typical "id" because later on other actions use this id to refer to it.
 
 We want to call the Nordic Summit Event API to get a list of all available events, which we can call it with a **GET** request to this url:
 **https://apim-dhino-fetch-test.azure-api.net/001/export/query/FEC542ED-32AA-4C6D-94E5-6B3841C96B59/910D07E6-F700-404E-8B5A-7263C9DCC58A/EVENTS**
@@ -88,7 +88,7 @@ We want to call the Nordic Summit Event API to get a list of all available event
 The two GUIDs in the URL are referencing the environment we want to target and we will consider them static for now, they point to the Workshop database (we weren't allowed to use the PROD database 😉)
 
 ### Request
-Pick an id for this operation and we will go on the the **Request** part of it. 
+Pick an id for this operation and we will go on the **Request** part of it. 
 
 The wizard has a great feature called **Import from Example** where you can copy paste an existing request (for example from documentation or lab instructions on GitHub), an the wizard will extract all needed information.
 
@@ -148,7 +148,7 @@ In the detail screen we now see that the Custom Connector knows about all the fi
 
 !["Default Response Parsed"](./assets/lab02_02_defaultresponseparsed.png)
 
-This is very important and **strongly** recommended to set up for all your actions. If you don't this, when a users calls this action in any UI (Power Automate, Power Apps, etc.) they will only get a JSON object and have to do all parsing themselves. This way the structure is already stored in the Custom Connector and can be directly used. This will be important in the following steps. 
+This is very important and **strongly** recommended to set up for all your actions. If you don't this, when a user calls this action in any UI (Power Automate, Power Apps, etc.) they will only get a JSON object and have to do all parsing themselves. This way the structure is already stored in the Custom Connector and can be directly used. This will be important in the following steps. 
 
 Also remember to **Update Connector** to publish your changes!
 

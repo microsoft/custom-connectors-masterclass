@@ -143,8 +143,6 @@ Now we are ready to test the connector AI Plugin!
 
     As you can see, the operationId equals `GetRandomChuckNorrisFact` as well, but there is a major difference. At the end of the URL you can see `?category=dev`. The AI Plugin is smart enough to add that to the URL based on the connector definition we used.
 
-## Task 4: Make the connector more dynamic by using dynamic schema
+## Task 4: Learn about connection parameters
 
-## Task 5: Learn about connection parameters
-
-## Task 6: Tie it all together with policies
+## Task 5: Tie it all together with policies
